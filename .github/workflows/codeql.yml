@@ -34,10 +34,6 @@ jobs:
         # Required for add-apt-repository
         sudo apt-get install software-properties-common
 
-        # Add repo for clang
-        sudo add-apt-repository ppa:kxstudio-team/builds
-        sudo apt-get update
-
         # Install dependencies
         sudo apt-get install binutils-dev clang libelf-dev libgsl0-dev libiberty-dev libreadline6 libreadline6-dev make uthash-dev
 
