@@ -32,7 +32,7 @@ jobs:
     - name: Install dependencies
       run: |-
         # Required for add-apt-repository
-        sudo apt-get install python-software-properties software-properties-common
+        sudo apt-get install software-properties-common
 
         # Add repo for clang
         sudo add-apt-repository ppa:kxstudio-team/builds
