@@ -28,8 +28,6 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
-      with:
-        submodules: 'recursive'
 
     - name: Install dependencies
       run: |-
@@ -64,6 +62,8 @@ jobs:
 
     - name: Build
       run: |-
+        git submodule init
+        git submodule update
         make
         sudo make install
 
